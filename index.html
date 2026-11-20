@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathSpace | Início</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-calculator-fill text-brand"></i> MathSpace</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="content.html">Conteúdo</a></li>
+        <li class="nav-item"><a class="nav-link" href="exercises.html">Exercícios</a></li>
+        <li class="nav-item"><a class="nav-link" href="materiais.html">Materiais</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero py-5">
+  <div class="container py-lg-5">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <span class="badge rounded-pill bg-light text-dark mb-3">Matemática do Ensino Médio</span>
+        <h1 class="display-4 fw-bold">Matemática de forma clara, um tema de cada vez.</h1>
+        <p class="lead my-4">Aulas, exercícios e materiais de estudo que cobrem tudo o que você estuda no ensino médio, de funções à matemática financeira.</p>
+        <a href="content.html" class="btn btn-light btn-lg me-2"><i class="bi bi-book"></i> Começar a estudar</a>
+        <a href="exercises.html" class="btn btn-outline-light btn-lg"><i class="bi bi-pencil-square"></i> Praticar</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+
+  <!-- Content: What is math + Importance -->
+  <div class="row g-4 mb-5">
+    <div class="col-lg-6">
+      <div class="card h-100 p-4">
+        <div class="icon-circle bg-brand-soft text-brand mb-3"><i class="bi bi-lightbulb"></i></div>
+        <h2 class="h3">O Que É Matemática?</h2>
+        <p>A matemática é a ciência dos números, das quantidades, das formas e dos padrões. Ela usa lógica e linguagem precisa para descrever relações e resolver problemas.</p>
+        <p class="mb-0">Mais do que cálculos, a matemática nos ensina a <strong>raciocinar</strong>, <strong>demonstrar</strong> ideias e <strong>pensar criticamente</strong>, habilidades úteis em todas as áreas da vida.</p>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card h-100 p-4">
+        <div class="icon-circle bg-success-subtle text-success mb-3"><i class="bi bi-globe2"></i></div>
+        <h2 class="h3">A Importância da Matemática no Dia a Dia</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item px-0"><i class="bi bi-cart3 text-brand me-2"></i>Compras: descontos, preços e troco</li>
+          <li class="list-group-item px-0"><i class="bi bi-cup-hot text-brand me-2"></i>Cozinha: medidas e proporções</li>
+          <li class="list-group-item px-0"><i class="bi bi-piggy-bank text-brand me-2"></i>Dinheiro: orçamentos, economias, juros e empréstimos</li>
+          <li class="list-group-item px-0"><i class="bi bi-phone text-brand me-2"></i>Tecnologia: aplicativos, jogos e internet</li>
+          <li class="list-group-item px-0"><i class="bi bi-briefcase text-brand me-2"></i>Carreiras: engenharia, saúde, economia, design</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Topics -->
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">O Que Você Vai Aprender</h2>
+    <p class="text-muted">Seis temas estudados no ensino médio</p>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-primary-subtle text-primary mb-3"><i class="bi bi-graph-up"></i></div>
+      <h3 class="h5">Funções</h3><p class="text-muted mb-0">Linear, quadrática, exponencial e logarítmica.</p>
+      <a href="content.html#functions" class="stretched-link" aria-label="Funções"></a></div></div>
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-success-subtle text-success mb-3"><i class="bi bi-bounding-box"></i></div>
+      <h3 class="h5">Geometria</h3><p class="text-muted mb-0">Áreas, perímetros e volumes de figuras.</p>
+      <a href="content.html#geometry" class="stretched-link" aria-label="Geometria"></a></div></div>
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-danger-subtle text-danger mb-3"><i class="bi bi-triangle"></i></div>
+      <h3 class="h5">Trigonometria</h3><p class="text-muted mb-0">Seno, cosseno, tangente e triângulos retângulos.</p>
+      <a href="content.html#trigonometry" class="stretched-link" aria-label="Trigonometria"></a></div></div>
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-warning-subtle text-warning mb-3"><i class="bi bi-dice-5"></i></div>
+      <h3 class="h5">Probabilidade</h3><p class="text-muted mb-0">Qual a chance de um evento acontecer.</p>
+      <a href="content.html#probability" class="stretched-link" aria-label="Probabilidade"></a></div></div>
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-info-subtle text-info mb-3"><i class="bi bi-bar-chart"></i></div>
+      <h3 class="h5">Estatística</h3><p class="text-muted mb-0">Média, mediana, moda e análise de dados.</p>
+      <a href="content.html#statistics" class="stretched-link" aria-label="Estatística"></a></div></div>
+    <div class="col"><div class="card card-lift h-100 p-4 position-relative">
+      <div class="icon-circle bg-secondary-subtle text-secondary mb-3"><i class="bi bi-cash-coin"></i></div>
+      <h3 class="h5">Matemática Financeira</h3><p class="text-muted mb-0">Porcentagens, juros simples e compostos.</p>
+      <a href="content.html#financial" class="stretched-link" aria-label="Matemática Financeira"></a></div></div>
+  </div>
+
+  <!-- Call to action -->
+  <div class="card bg-brand-soft mt-5 p-4 p-lg-5 text-center">
+    <h2 class="fw-bold">Pronto para se testar?</h2>
+    <p class="text-muted">Resolva nossos exercícios e confira suas respostas na hora.</p>
+    <div><a href="exercises.html" class="btn btn-brand btn-lg">Ir para os Exercícios <i class="bi bi-arrow-right"></i></a></div>
+  </div>
+</main>
+
+<footer class="py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>© 2026 MathSpace · Projeto escolar pelo Pablo Marcos do 1i6 com Bootstrap 5</span>
+    <span><a href="contact.html">Fale conosco</a></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

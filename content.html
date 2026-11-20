@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathSpace | Conteúdo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#topicNav" data-bs-offset="100" tabindex="0">
+
+<nav class="navbar navbar-expand-lg navbar-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="bi bi-calculator-fill text-brand"></i> MathSpace</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Alternar navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+        <li class="nav-item"><a class="nav-link active" href="content.html">Conteúdo</a></li>
+        <li class="nav-item"><a class="nav-link" href="exercises.html">Exercícios</a></li>
+        <li class="nav-item"><a class="nav-link" href="materiais.html">Materiais</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb mb-2">
+      <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Início</a></li>
+      <li class="breadcrumb-item active text-white" aria-current="page">Conteúdo</li>
+    </ol></nav>
+    <h1 class="fw-bold">Conteúdo</h1>
+    <p class="lead mb-0">Organizado pelos temas estudados no ensino médio.</p>
+  </div>
+</header>
+
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Side navigation (List Group + Scrollspy) -->
+    <aside class="col-lg-3">
+      <div id="topicNav" class="list-group topic-nav sticky-lg-top" style="top: 90px;">
+        <a class="list-group-item list-group-item-action" href="#functions"><i class="bi bi-graph-up me-2"></i>Funções</a>
+        <a class="list-group-item list-group-item-action" href="#geometry"><i class="bi bi-bounding-box me-2"></i>Geometria</a>
+        <a class="list-group-item list-group-item-action" href="#trigonometry"><i class="bi bi-triangle me-2"></i>Trigonometria</a>
+        <a class="list-group-item list-group-item-action" href="#probability"><i class="bi bi-dice-5 me-2"></i>Probabilidade</a>
+        <a class="list-group-item list-group-item-action" href="#statistics"><i class="bi bi-bar-chart me-2"></i>Estatística</a>
+        <a class="list-group-item list-group-item-action" href="#financial"><i class="bi bi-cash-coin me-2"></i>Matemática Financeira</a>
+      </div>
+    </aside>
+
+    <div class="col-lg-9">
+
+      <!-- FUNCTIONS: Accordion -->
+      <section id="functions" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-primary-subtle text-primary"><i class="bi bi-graph-up"></i></div>
+          <div><h2 class="h3 mb-0">Funções</h2><span class="badge text-bg-primary">Acordeão</span></div>
+        </div>
+        <p>Uma <strong>função</strong> é uma regra que associa a cada entrada <em>x</em> exatamente uma saída <em>f(x)</em>. O conjunto das entradas é o <em>domínio</em> e o conjunto das saídas é a <em>imagem</em>.</p>
+        <div class="accordion" id="accFunctions">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#fn1">Função linear</button></h3>
+            <div id="fn1" class="accordion-collapse collapse show" data-bs-parent="#accFunctions"><div class="accordion-body">
+              <div class="formula">f(x) = ax + b</div>
+              O gráfico é uma reta. <strong>a</strong> é o coeficiente angular (o quanto a reta é inclinada) e <strong>b</strong> é o ponto onde a reta cruza o eixo y. Se a &gt; 0, a função é crescente; se a &lt; 0, é decrescente.
+            </div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fn2">Função quadrática</button></h3>
+            <div id="fn2" class="accordion-collapse collapse" data-bs-parent="#accFunctions"><div class="accordion-body">
+              <div class="formula">f(x) = ax² + bx + c &nbsp;&nbsp;|&nbsp;&nbsp; x = (−b ± √Δ) / 2a, &nbsp;Δ = b² − 4ac</div>
+              O gráfico é uma parábola. Se a &gt; 0, a concavidade é voltada para cima; se a &lt; 0, é voltada para baixo. O vértice está em x = −b / 2a.
+            </div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fn3">Funções exponencial e logarítmica</button></h3>
+            <div id="fn3" class="accordion-collapse collapse" data-bs-parent="#accFunctions"><div class="accordion-body">
+              <div class="formula">f(x) = aˣ &nbsp;&nbsp;|&nbsp;&nbsp; log<sub>a</sub>(b) = c ⇔ aᶜ = b</div>
+              As funções exponenciais modelam crescimento ou decaimento rápido (populações, juros). O logaritmo é a função inversa da exponencial.
+            </div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GEOMETRY: Table -->
+      <section id="geometry" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-success-subtle text-success"><i class="bi bi-bounding-box"></i></div>
+          <div><h2 class="h3 mb-0">Geometria</h2><span class="badge text-bg-success">Tabela</span></div>
+        </div>
+        <p>A geometria estuda as formas, os tamanhos, as posições e o espaço que elas ocupam. A geometria plana trata das figuras planas; a geometria espacial trata dos sólidos.</p>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-success"><tr><th>Figura</th><th>Área</th><th>Perímetro / Volume</th></tr></thead>
+            <tbody>
+              <tr><td>Quadrado (lado a)</td><td>a²</td><td>P = 4a</td></tr>
+              <tr><td>Retângulo</td><td>b × h</td><td>P = 2(b + h)</td></tr>
+              <tr><td>Triângulo</td><td>(b × h) / 2</td><td>P = a + b + c</td></tr>
+              <tr><td>Círculo</td><td>πr²</td><td>C = 2πr</td></tr>
+              <tr><td>Cubo</td><td>6a²</td><td>V = a³</td></tr>
+              <tr><td>Cilindro</td><td>2πr(r + h)</td><td>V = πr²h</td></tr>
+              <tr><td>Esfera</td><td>4πr²</td><td>V = (4/3)πr³</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TRIGONOMETRY: Tabs -->
+      <section id="trigonometry" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-danger-subtle text-danger"><i class="bi bi-triangle"></i></div>
+          <div><h2 class="h3 mb-0">Trigonometria</h2><span class="badge text-bg-danger">Abas</span></div>
+        </div>
+        <p>A trigonometria relaciona os ângulos de um triângulo com os comprimentos de seus lados.</p>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#trig1" type="button">Razões</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#trig2" type="button">Ângulos notáveis</button></li>
+          <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#trig3" type="button">Identidades</button></li>
+        </ul>
+        <div class="tab-content border border-top-0 rounded-bottom p-3">
+          <div class="tab-pane fade show active" id="trig1">
+            <div class="row text-center g-2">
+              <div class="col-md-4"><div class="formula mb-0">sen θ = cateto oposto / hipotenusa</div></div>
+              <div class="col-md-4"><div class="formula mb-0">cos θ = cateto adjacente / hipotenusa</div></div>
+              <div class="col-md-4"><div class="formula mb-0">tg θ = cateto oposto / cateto adjacente</div></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="trig2">
+            <table class="table table-sm text-center mb-0">
+              <thead><tr><th></th><th>30°</th><th>45°</th><th>60°</th></tr></thead>
+              <tbody>
+                <tr><th>sen</th><td>1/2</td><td>√2/2</td><td>√3/2</td></tr>
+                <tr><th>cos</th><td>√3/2</td><td>√2/2</td><td>1/2</td></tr>
+                <tr><th>tg</th><td>√3/3</td><td>1</td><td>√3</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="trig3">
+            <div class="formula">sen²θ + cos²θ = 1</div>
+            <div class="formula">tg θ = sen θ / cos θ</div>
+            <div class="formula">Lei dos senos: a / sen A = b / sen B = c / sen C</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBABILITY: List group + Alert -->
+      <section id="probability" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-warning-subtle text-warning"><i class="bi bi-dice-5"></i></div>
+          <div><h2 class="h3 mb-0">Probabilidade</h2><span class="badge text-bg-warning">Lista</span></div>
+        </div>
+        <p>A probabilidade mede a chance de um evento acontecer, em uma escala de <strong>0</strong> (impossível) a <strong>1</strong> (certo).</p>
+        <ul class="list-group mb-3">
+          <li class="list-group-item"><strong>Regra básica:</strong> P(A) = casos favoráveis / casos possíveis</li>
+          <li class="list-group-item"><strong>Complementar:</strong> P(não A) = 1 − P(A)</li>
+          <li class="list-group-item"><strong>Eventos independentes:</strong> P(A e B) = P(A) × P(B)</li>
+          <li class="list-group-item"><strong>Um evento ou outro:</strong> P(A ou B) = P(A) + P(B) − P(A e B)</li>
+        </ul>
+        <div class="alert alert-warning mb-0"><i class="bi bi-info-circle me-1"></i><strong>Exemplo:</strong> a probabilidade de tirar 6 em um dado é 1/6 ≈ 16,7%.</div>
+      </section>
+
+      <!-- STATISTICS: Cards + Progress -->
+      <section id="statistics" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-info-subtle text-info"><i class="bi bi-bar-chart"></i></div>
+          <div><h2 class="h3 mb-0">Estatística</h2><span class="badge text-bg-info">Cartões &amp; Progresso</span></div>
+        </div>
+        <p>A estatística coleta, organiza e interpreta dados. Conjunto de dados de exemplo: <code>4, 7, 7, 8, 9</code></p>
+        <div class="row g-3 mb-3">
+          <div class="col-md-4"><div class="card bg-info-subtle h-100 p-3"><h3 class="h6">Média</h3><p class="mb-0 small">Soma ÷ quantidade<br><strong>35 ÷ 5 = 7</strong></p></div></div>
+          <div class="col-md-4"><div class="card bg-info-subtle h-100 p-3"><h3 class="h6">Mediana</h3><p class="mb-0 small">Valor central com os dados ordenados<br><strong>7</strong></p></div></div>
+          <div class="col-md-4"><div class="card bg-info-subtle h-100 p-3"><h3 class="h6">Moda</h3><p class="mb-0 small">Valor que mais se repete<br><strong>7</strong></p></div></div>
+        </div>
+        <p class="small text-muted mb-1">Exemplo: matéria escolar favorita (pesquisa na turma)</p>
+        <div class="mb-2"><small>Matemática 40%</small><div class="progress"><div class="progress-bar bg-info" style="width: 40%"></div></div></div>
+        <div class="mb-2"><small>Ciências 30%</small><div class="progress"><div class="progress-bar bg-success" style="width: 30%"></div></div></div>
+        <div><small>Línguas 30%</small><div class="progress"><div class="progress-bar bg-warning" style="width: 30%"></div></div></div>
+      </section>
+
+      <!-- FINANCIAL: Cards + Alert -->
+      <section id="financial" class="topic card p-4 mb-4">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="icon-circle bg-secondary-subtle text-secondary"><i class="bi bi-cash-coin"></i></div>
+          <div><h2 class="h3 mb-0">Matemática Financeira</h2><span class="badge text-bg-secondary">Cartões</span></div>
+        </div>
+        <p>A matemática financeira nos ajuda a entender porcentagens, descontos, juros e empréstimos.</p>
+        <div class="row g-3">
+          <div class="col-md-6"><div class="card border h-100 p-3">
+            <h3 class="h6">Juros simples</h3>
+            <div class="formula">J = C · i · t &nbsp;&nbsp; M = C + J</div>
+            <p class="small mb-0">Os juros são sempre calculados sobre o valor original.</p>
+          </div></div>
+          <div class="col-md-6"><div class="card border h-100 p-3">
+            <h3 class="h6">Juros compostos</h3>
+            <div class="formula">M = C · (1 + i)<sup>t</sup></div>
+            <p class="small mb-0">Os juros são incorporados ao montante, então juros rendem juros.</p>
+          </div></div>
+        </div>
+        <div class="alert alert-secondary mt-3 mb-0"><i class="bi bi-lightbulb me-1"></i>C = capital, i = taxa por período, t = tempo, M = montante. Um desconto de 20% sobre R$ 50: 50 × 0,8 = <strong>R$ 40</strong>.</div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer class="py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>© 2026 MathSpace · Projeto escolar pelo Pablo Marcos do 1i6 com Bootstrap 5</span>
+    <span><a href="contact.html">Fale conosco</a></span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
